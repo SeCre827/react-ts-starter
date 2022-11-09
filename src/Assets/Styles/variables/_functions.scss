@@ -1,0 +1,17 @@
+@use 'sass:math';
+
+$conversion-ratio-sp-to-rem-web: math.div(1, 16); // ! 0.0625;
+$conversion-ratio-rem-to-px-web: 16.0;
+
+// Scales
+@function sp-to-rem($sps){
+    @return $sps * $conversion-ratio-sp-to-rem-web;
+}
+
+@function rem-to-px($rems){
+    @return $rems * $conversion-ratio-rem-to-px-web;
+}
+
+@function spacing($tracking, $px){
+    @return math.div($tracking, $px);
+}

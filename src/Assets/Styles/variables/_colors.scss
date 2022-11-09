@@ -1,0 +1,21 @@
+@use 'sass:color';
+
+// Color names from: https://chir.ag/projects/name-that-color
+$white: #FFFFFF;
+$black: #010101;
+$gray: #555;
+$grey-cod: #0D0D0D;
+$red-crimson: #EC1D24;
+
+$transparent-black: rgb(0 0 0 / 50%);
+
+// Theme
+$accent: $red-crimson;
+$accent-highlight: color.adjust($accent, $lightness: 5%);
+$dark: $grey-cod;
+$dark-highlight: color.adjust($dark, $lightness: 5%);
+$highlight: $red-crimson;
+
+// Brands
+$blue-san-marino: #4167B2;
+$facebook: $blue-san-marino;
